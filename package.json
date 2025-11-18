@@ -1,0 +1,11 @@
+{
+  "name": "nome-do-seu-projeto",
+  "version": "1.0.0",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  },
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./styles.css -o ./output.css --watch"
+  }
+}

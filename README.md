@@ -13,7 +13,7 @@ Trabalhar com elementos visuais e design utilizando CSS3, explorando sistemas de
 ## ✅ Checklist da Atividade
 
 ### 1. Preparação do Ambiente
-- [ ] Realizar o fork deste repositório
+- [X] Realizar o fork deste repositório
   - ou
     - [ ] Clonar o repositório forkado para sua máquina, 
     - [ ] Abrir o projeto no editor de código
