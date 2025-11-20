@@ -4,207 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade CSS3 - Cores, Tipografia e Backgrounds</title>
-      
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
+    <style>
+        .font-roboto { font-family: "Roboto", sans-serif; }
+        .font-playfair { font-family: "Playfair Display", serif; }
+    </style>
 </head>
-<body>
-    <header>
-        <h1 class="font-bold">Atividade CSS3: Elementos Visuais e Design</h1>
-        <p>Explorando Cores, Tipografia e Backgrounds</p>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="text-center py-10 bg-gradient-to-r from-purple-500 to-indigo-600 text-white shadow-lg">
+        <h1 class="text-4xl font-bold">Atividade CSS3: Elementos Visuais e Design</h1>
+        <p class="mt-2 text-lg">Explorando Cores, Tipografia e Backgrounds</p>
     </header>
 
-    <main>
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
         <!-- Seção 1: Sistemas de Cores -->
         <section>
-            <h2>1. Sistemas de Cores em CSS</h2>
-            
-            <div>
-                <div>
-                    <h3>Nome da Cor</h3>
+            <h2 class="text-3xl font-bold mb-6">1. Sistemas de Cores em CSS</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="p-4 bg-red-500 text-white rounded-lg shadow">
+                    <h3 class="font-bold">Nome da Cor</h3>
                     <p>background-color: red;</p>
                 </div>
-                
-                <div>
-                    <h3>Hexadecimal</h3>
+
+                <div class="p-4 bg-[#3498db] text-white rounded-lg shadow">
+                    <h3 class="font-bold">Hexadecimal</h3>
                     <p>#3498db</p>
                 </div>
-                
-                <div>
-                    <h3>RGB</h3>
+
+                <div class="p-4 bg-[rgb(46,204,113)] text-white rounded-lg shadow">
+                    <h3 class="font-bold">RGB</h3>
                     <p>rgb(46, 204, 113)</p>
                 </div>
-                
-                <div>
-                    <h3>RGBA</h3>
+
+                <div class="p-4 bg-[rgba(155,89,182,0.7)] text-white rounded-lg shadow">
+                    <h3 class="font-bold">RGBA</h3>
                     <p>rgba(155, 89, 182, 0.7)</p>
                 </div>
-                
-                <div>
-                    <h3>HSL</h3>
+
+                <div class="p-4 bg-[hsl(48,89%,60%)] text-black rounded-lg shadow">
+                    <h3 class="font-bold">HSL</h3>
                     <p>hsl(48, 89%, 60%)</p>
                 </div>
             </div>
 
-            <div>
-                <h3>Paleta de Cores do Projeto</h3>
-                <div>
-                    <div>
-                        <span>Primária</span>
-                    </div>
-                    <div>
-                        <span>Secundária</span>
-                    </div>
-                    <div>
-                        <span>Terciária</span>
-                    </div>
-                    <div>
-                        <span>Acento</span>
-                    </div>
-                    <div>
-                        <span>Neutra</span>
-                    </div>
-                </div>
+            <!-- Paleta de cores -->
+            <h3 class="mt-10 text-xl font-semibold">Paleta de Cores do Projeto</h3>
+
+            <div class="grid grid-cols-5 gap-4 mt-3">
+                <div class="p-4 bg-[#1abc9c] text-white rounded-lg shadow text-center">Primária</div>
+                <div class="p-4 bg-[#3498db] text-white rounded-lg shadow text-center">Secundária</div>
+                <div class="p-4 bg-[#9b59b6] text-white rounded-lg shadow text-center">Terciária</div>
+                <div class="p-4 bg-[#f1c40f] text-black rounded-lg shadow text-center">Acento</div>
+                <div class="p-4 bg-[#ecf0f1] text-black rounded-lg shadow text-center">Neutra</div>
             </div>
         </section>
 
         <!-- Seção 2: Tipografia -->
         <section>
-            <h2>2. Tipografia</h2>
-            
-            <div>
-                <div>
-                    <h3>Roboto (Google Fonts)</h3>
-                    <p>Font-weight: 300 (Light)</p>
-                    <p>Font-weight: 400 (Regular)</p>
-                    <p>Font-weight: 700 (Bold)</p>
+            <h2 class="text-3xl font-bold mb-6">2. Tipografia</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="p-4 bg-white rounded-lg shadow font-roboto">
+                    <h3 class="text-xl font-bold">Roboto (Google Fonts)</h3>
+                    <p class="font-light">Font-weight: 300 (Light)</p>
+                    <p class="font-normal">Font-weight: 400 (Regular)</p>
+                    <p class="font-bold">Font-weight: 700 (Bold)</p>
                 </div>
-                
-                <div>
-                    <h3>Playfair Display (Google Fonts)</h3>
-                    <p>Uma fonte serifada elegante para títulos</p>
+
+                <div class="p-4 bg-white rounded-lg shadow font-playfair">
+                    <h3 class="text-xl font-bold">Playfair Display</h3>
+                    <p>Fonte serifada elegante para títulos</p>
                 </div>
-                
-                <div>
-                    <h3>Fonte do Sistema</h3>
-                    <p>Font-size: 14px</p>
-                    <p>Font-size: 16px (1em)</p>
-                    <p>Font-size: 18px (1.125rem)</p>
-                    <p>Font-size: 24px (1.5rem)</p>
+
+                <div class="p-4 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-bold">Fontes do Sistema</h3>
+                    <p class="text-[14px]">Font-size: 14px</p>
+                    <p class="text-base">Font-size: 16px (1em)</p>
+                    <p class="text-[1.125rem]">Font-size: 18px</p>
+                    <p class="text-2xl">Font-size: 24px</p>
                 </div>
-                
-                <div>
-                    <h3>Line-height (Espaçamento entre Linhas)</h3>
-                    <p>Line-height: 1.2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-                    <p>Line-height: 1.5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-                    <p>Line-height: 2.0 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+
+                <div class="p-4 bg-white rounded-lg shadow col-span-full">
+                    <h3 class="text-xl font-bold mb-2">Line-height</h3>
+                    <p class="leading-tight">line-height: 1.2 — Lorem ipsum dolor sit amet...</p>
+                    <p class="leading-normal">line-height: 1.5 — Lorem ipsum dolor sit amet...</p>
+                    <p class="leading-loose">line-height: 2.0 — Lorem ipsum dolor sit amet...</p>
                 </div>
             </div>
         </section>
 
         <!-- Seção 3: Backgrounds -->
         <section>
-            <h2>3. Backgrounds</h2>
-            
-            <div>
-                <div>
-                    <h3>Background Color</h3>
+            <h2 class="text-3xl font-bold mb-6">3. Backgrounds</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div class="p-4 bg-blue-500 text-white rounded-lg shadow">
+                    <h3 class="font-bold">Background Color</h3>
                     <p>Cor sólida de fundo</p>
                 </div>
-                
-                <div>
-                    <h3>Background Image</h3>
-                    <p>Imagem de fundo com padrão</p>
-                </div>
-                
-                <div>
-                    <h3>Background Size: Cover</h3>
-                    <p>Imagem cobre todo o elemento</p>
-                </div>
-                
-                <div>
-                    <h3>Background Size: Contain</h3>
-                    <p>Imagem contida no elemento</p>
-                </div>
-            </div>
 
-            <div>
-                <h3>Background Position</h3>
-                <div>
-                    <div>Center</div>
-                    <div>Top</div>
-                    <div>Bottom</div>
-                    <div>Left</div>
-                    <div>Right</div>
+                <div class="p-4 bg-[url('https://picsum.photos/300')] bg-cover text-white rounded-lg shadow h-40 flex items-end">
+                    <h3 class="font-bold bg-black/50 w-full p-2">Background Image</h3>
+                </div>
+
+                <div class="p-4 bg-[url('https://picsum.photos/400')] bg-cover text-white rounded-lg shadow h-40">
+                    <h3 class="font-bold">Background Size: Cover</h3>
+                </div>
+
+                <div class="p-4 bg-[url('https://picsum.photos/400')] bg-contain bg-no-repeat text-white rounded-lg shadow h-40">
+                    <h3 class="font-bold">Background Size: Contain</h3>
                 </div>
             </div>
         </section>
 
         <!-- Seção 4: Gradientes -->
         <section>
-            <h2>4. Gradientes CSS</h2>
-            
-            <div>
-                <div>
-                    <h3>Linear - 2 Cores</h3>
-                    <code>linear-gradient(to right, #667eea, #764ba2)</code>
+            <h2 class="text-3xl font-bold mb-6">4. Gradientes CSS</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="p-4 rounded-lg shadow bg-gradient-to-r from-indigo-400 to-purple-600 text-white">
+                    <h3 class="font-bold">Linear - 2 cores</h3>
                 </div>
-                
-                <div>
-                    <h3>Linear - 3 Cores</h3>
-                    <code>linear-gradient(to right, #f093fb, #f5576c, #ffd140)</code>
+
+                <div class="p-4 rounded-lg shadow bg-gradient-to-r from-pink-300 via-red-400 to-yellow-300 text-white">
+                    <h3 class="font-bold">Linear - 3 cores</h3>
                 </div>
-                
-                <div>
-                    <h3>Linear - 45 graus</h3>
-                    <code>linear-gradient(45deg, #FA8BFF, #2BD2FF, #2BFF88)</code>
+
+                <div class="p-4 rounded-lg shadow bg-[linear-gradient(45deg,#FA8BFF,#2BD2FF,#2BFF88)] text-white">
+                    <h3 class="font-bold">Linear - 45°</h3>
                 </div>
-                
-                <div>
-                    <h3>Radial Gradient</h3>
-                    <code>radial-gradient(circle, #667eea, #764ba2)</code>
+
+                <div class="p-4 rounded-lg shadow bg-[radial-gradient(circle,#667eea,#764ba2)] text-white">
+                    <h3 class="font-bold">Radial Gradient</h3>
                 </div>
-                
-                <div>
-                    <h3>Gradiente Complexo</h3>
-                    <code>linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)</code>
+
+                <div class="p-4 rounded-lg shadow bg-[linear-gradient(135deg,#667eea_0%,#764ba2_50%,#f093fb_100%)] text-white">
+                    <h3 class="font-bold">Gradiente Complexo</h3>
                 </div>
-                
-                <div>
-                    <h3>Radial Complexo</h3>
-                    <code>radial-gradient(circle at top left, #FA8BFF, #2BD2FF, #2BFF88)</code>
+
+                <div class="p-4 rounded-lg shadow bg-[radial-gradient(circle_at_top_left,#FA8BFF,#2BD2FF,#2BFF88)] text-white">
+                    <h3 class="font-bold">Radial Complexo</h3>
                 </div>
+
             </div>
         </section>
 
         <!-- Seção 5: Exercício Prático -->
         <section>
-            <h2>5. Exercício Prático</h2>
-            <div>
-                <h3>Crie seu próprio card!</h3>
-                <p>Use os conceitos aprendidos para estilizar um card abaixo:</p>
-                
-                <div>
-                    <h4>Título do Card</h4>
-                    <p>Este é um exemplo de texto. Aplique cores, tipografia e backgrounds para criar algo único!</p>
-                    <button>Botão de Ação</button>
+            <h2 class="text-3xl font-bold mb-6">5. Exercício Prático</h2>
+
+            <p class="mb-6">Crie seu próprio card usando cores, fontes e gradientes.</p>
+
+            <div class="bg-purple-500 p-6 rounded-2xl shadow-lg max-w-lg mx-auto text-white text-center">
+
+                <h4 class="text-2xl font-bold mb-3 font-playfair">Comemore comigo</h4>
+            
+                <p class="mb-4 font-roboto">
+                    Essa é a minha primeira atividade com Tailwind CSS!
+                </p>
+            
+                <div id="boneco" class="text-6xl transition-all duration-300 select-none">
+                    (•‿•)
                 </div>
-                
-                <div>
-                    <h4>💡 Dicas:</h4>
-                    <ul>
-                        <li>Experimente diferentes combinações de cores</li>
-                        <li>Use Google Fonts para uma tipografia interessante</li>
-                        <li>Adicione um gradiente de fundo</li>
-                        <li>Brinque com sombras e espaçamentos</li>
-                    </ul>
-                </div>
+            
+                <!-- Botão -->
+                <button 
+                    id="btnComemorar"
+                    class="mt-4 px-6 py-2 bg-gradient-to-r from-purple-700 to-pink-500 
+                    text-white rounded-lg shadow hover:opacity-90 transition">
+                    Comemorar 🎉
+                </button>
             </div>
+            
+            <!-- Script para animação ao clicar no botão -->
+            <script>
+                const boneco = document.getElementById("boneco");
+                const btn = document.getElementById("btnComemorar");
+            
+                btn.addEventListener("click", () => {
+                    boneco.textContent = "\\(ᵔᵕᵔ)/"; 
+                    
+                    boneco.classList.add("scale-125"); // aumentar o tamanho do efeito
+                    
+                    // voltar ao normal (2s)
+                    setTimeout(() => {
+                        boneco.textContent = "(•‿•)";
+                        boneco.classList.remove("scale-125");
+                    }, 2000);
+                });
+            </script>
+            
         </section>
     </main>
 
-    <footer>
+    <footer class="text-center py-6 bg-gray-900 text-white">
         <p>&copy; 2025 - Atividade de Web Design - CSS3</p>
         <p>Explore, experimente e aprenda! 🎨</p>
     </footer>
+
 </body>
 </html>
